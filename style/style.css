@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ 
+
+.inter-fonts {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+  }
+  
+body{
+    background: rgb(0, 0, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* shared styles  */
+.flex{
+    display: flex;
+}
+.max-w{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+/* Nave section start here  */
+
+.main-header{
+    background: linear-gradient(#111111, #777777);
+}
+.navs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px;
+}
+.fitness{
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #E6533C;
+}
+.menu-bar{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 28px;
+}
+.menu-bar li{
+    list-style: none;
+    padding: 10px;
+    margin: 0px 45px;
+}
+.menu-bar a{
+    text-decoration: none;
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: white;
+}
+.icons{
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+#home{
+    margin-left: 0px;
+    border-radius: 46px;
+    background-color: #E6533C;
+}
+#contact{
+    margin-right: 0px;
+}
+
+/* Header section start here  */
+
+.header-div{
+    justify-content: space-between;
+}
+.text-div{
+    width: 520px;
+    margin: 71px 0px;
+}
+.header-title{
+    font-size: 5rem;
+    font-weight: 900;
+    color: white;
+}
+.header-p{
+    font-size: 1rem;
+    font-weight: 400px;
+    margin: 28px 0px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.primary-btn{
+    font-size: 1.12rem;
+    font-weight: 600;
+    margin: 0px 14px 0px 0px;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 45px;
+    color: white;
+    background-color: #E6533C;
+}
+#app-btn{
+    border: 1px solid white;
+    background-color: black;
+}
+
+.img-div img{
+    position: relative;
+}
+.tutorial-div{
+    display: flex;
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    padding: 23px 20px;
+    position: absolute;
+    top: 500px;
+    left: 750px;
+}
+.red{
+    width: 40px;
+    height: 40px;
+    background-color: #E6533C;
+    border-radius: 50%;
+}
+.tutorial{
+    margin-left: 10px;
+     color: white;
+}
+.span-text{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.workout-div{
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    padding: 17px 24px;
+    position: absolute;
+    top: 250px;
+    left: 1100px;
+}
+
+
+/* Responsive layout start here  */
+
+@media screen and (max-width: 576px) {
+    .menu-bar{
+        display: none;
+    }
+    .icons{
+        display: block;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .text-div{
+        width: 100%;
+    }
+    .header-title{
+        font-size: 3rem;
+    }
+    .primary-btn{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .img-div img{
+        width: 100%;
+    }
+    .tutorial-div{
+        width: 160px;
+        font-size: 1.2rem;
+        padding: 7px 10px;
+        top: 900px;
+        left: 20px;
+    }
+    .workout-div{
+        width: 160px;
+        font-size: 1.2rem;
+        padding: 7px 10px;
+        top: 750px;
+        left: 175px;
+    }
+}
