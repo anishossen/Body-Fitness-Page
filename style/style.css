@@ -238,13 +238,16 @@ body{
     justify-content: center;
 }
 .run-title,
-.exercise-name{
+.exercise-name,
+.calculator-name{
     font-size: 3rem;
     font-weight: 900;
     color: white;
 }
 .run-para,
-.exercise-para{
+.exercise-para,
+.calculator-para,
+.bmi-para{
     font-size: 0.9rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
@@ -259,6 +262,71 @@ body{
     object-fit: none;
     object-position: 66% 33%;
 }
+
+/* BMI calculator chart css code start here  */
+
+.calculator-intro{
+    text-align: center;
+}
+.calculator-work{
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+}
+.calculator-chart{
+    padding: 55px 100px;
+    margin-top: 30px;
+}
+.cal-your-bmi{
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cal-chart-title,
+.bmi-title{
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    text-align: start;
+}
+td, th{
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 10px;
+    color: rgb(91, 91, 91);
+}
+.option-div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 20px 0px;
+}
+.input-div{
+    width: 100%;
+}
+input, select{
+    width: 100%;
+    padding: 12px 40px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+.last{
+    grid-column: span 2;
+}
+option{
+    color: red;
+}
+
 
 /* Meet our team section css code start here  */
 .team-text{
@@ -408,8 +476,14 @@ body{
 .run-title,
 .team-title,
 .exercise-title,
-.exercise-name{
+.exercise-name,
+.calculator-name,
+.cal-chart-title,
+.bmi-title{
     font-size: 1.5rem;
+}
+.calculator-chart{
+    padding: 10px;
 }
 .habits,
 .img-box,
@@ -427,6 +501,9 @@ body{
 .run-img img{
     width: 100%;
     object-fit: cover;
+}
+.img-card img{
+    width: 100%;
 }
 #join-btn{
     margin: 17px 0px;
