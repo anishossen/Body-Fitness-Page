@@ -7,7 +7,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(206, 148, 148);
+    background-color: rgb(0, 0, 0);
   }
   
 body{
@@ -23,7 +23,7 @@ body{
     display: flex;
 }
 .max-w{
-    max-width: 1060px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -193,8 +193,38 @@ body{
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* Exercise section css code start here  */
+.exercise{
+    margin: 70px 0px;
+}
+.exercise-title{
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    margin: 15px 0px;
+}
+.exercise-box{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    box-shadow: 4px 4px 10px 4px rgb(48, 46, 46);
+    border-radius: 10px;
+    gap: 40px;
+    padding: 40px;
+    margin: 20px 0px;
+}
+.exercise-text{
+    width: 100%;
+}
+.exercise-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
 /* Run an extra mile easily css code start here  */
-.run{
+.main-run{
     display: flex;
     border-radius: 18px;
     background-color: rgb(34, 34, 34);
@@ -207,12 +237,14 @@ body{
     align-items: flex-start;
     justify-content: center;
 }
-.run-title{
+.run-title,
+.exercise-name{
     font-size: 3rem;
     font-weight: 900;
     color: white;
 }
-.run-para{
+.run-para,
+.exercise-para{
     font-size: 0.9rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
@@ -276,10 +308,13 @@ body{
 
 /* Footer sectoin css code start from here  */
 .footer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     background-color: rgb(60, 60, 60);
     margin: 88px 0px;
+}
+.main-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
 }
 .footer-fitness{
     font-size: 5rem;
@@ -342,7 +377,7 @@ hr{
         font-size: 3rem;
     }
     .primary-btn{
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 10px 20px;
     }
     .img-div img{
@@ -366,17 +401,20 @@ hr{
 /* Change your habit responsive code start here  */
 .habit-title,
 .run-title,
-.team-title{
+.team-title,
+.exercise-title,
+.exercise-name{
     font-size: 1.5rem;
 }
 .habits,
 .img-box,
-.footer{
+.main-footer{
     grid-template-columns: 1fr;
 }
 
 /* run an extra mile easily responsive code start here  */
-.run{
+.main-run,
+.exercise-box{
     flex-direction: column;
     padding: 20px 25px;
 }
