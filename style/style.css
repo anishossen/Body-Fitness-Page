@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
  
-
+@import url("https://fonts.cdnfonts.com/css/miama");
 .inter-fonts {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -72,7 +72,14 @@ body{
 }
 
 /* Header section start here  */
-
+ 
+ .shape-font{
+    font-family: "Miama", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 0.1px;
+ }
+                                                
 .header-div{
     justify-content: space-between;
 }
@@ -269,7 +276,8 @@ body{
     text-align: center;
 }
 .calculator-work{
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-color: rgb(34, 34, 34);
 }
 .calculator-chart{
@@ -277,25 +285,35 @@ body{
     margin-top: 30px;
 }
 .cal-your-bmi{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: start;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.cal-chart-title,
 .bmi-title{
     font-size: 2rem;
     color: white;
     font-weight: 800;
+    margin-top: 50px;
+}
+.cal-chart-title{
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 50px;
 }
 table{
     border-collapse: collapse;
 }
 th{
     text-align: start;
+    color: rgb(243, 235, 235);
+    font-size: 1rem;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 10px;
 }
-td, th{
+td{
     border: 3px solid rgba(255, 255, 255, 0.1);
     padding: 8px 10px;
     color: rgb(91, 91, 91);
@@ -487,7 +505,8 @@ option{
 }
 .habits,
 .img-box,
-.main-footer{
+.main-footer,
+.calculator-work{
     grid-template-columns: 1fr;
     gap: 30px;
 }
