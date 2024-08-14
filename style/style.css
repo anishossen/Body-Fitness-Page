@@ -134,7 +134,7 @@ body{
     background-color: #E6533C;
     border-radius: 50%;
 }
-.play-icon{
+.red i{
     display: none;
 }
 .tutorial{
@@ -459,7 +459,8 @@ option{
     .icons{
         display: block;
     }
-    .play-icon{
+    .red i{
+        display: block;
         color: white;
         position: absolute;
         top: 32px;
