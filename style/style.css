@@ -310,10 +310,12 @@ body{
 .footer{
     background-color: rgb(60, 60, 60);
     margin: 88px 0px;
+    padding: 40px 0px;
 }
 .main-footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     gap: 100px;
 }
 .footer-fitness{
@@ -333,22 +335,23 @@ body{
 }
 .service-list li{
     list-style: none;
+    line-height: 40px;
 }
 .service-list a{
     text-decoration: none;
     font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.5);
 }
-hr{
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    /* width: 80%; */
+.horizontal{
+    width: 90%;
+    margin: 0 auto;
+}
+.horizontal hr{
     margin: 50px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .foot{
     font-size: 1rem;
+    text-align: center;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     margin: 38px 0px;
@@ -397,7 +400,9 @@ hr{
         top: 750px;
         left: 175px;
     }
-
+.header-btn{
+    display: flex;
+}
 /* Change your habit responsive code start here  */
 .habit-title,
 .run-title,
@@ -410,6 +415,7 @@ hr{
 .img-box,
 .main-footer{
     grid-template-columns: 1fr;
+    gap: 30px;
 }
 
 /* run an extra mile easily responsive code start here  */
