@@ -7,7 +7,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: black;
+    background-color: rgb(206, 148, 148);
   }
   
 body{
@@ -146,10 +146,97 @@ body{
     left: 1100px;
 }
 
+/* Change your habit css code start here  */
+
+.habit-text{
+    margin: 58px 0px;
+    text-align: center;
+}
+.habit-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.habit-p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 14px 0px;
+}
+
+.habits{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+.habits-h{
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: white;
+    margin: 6px 0px;
+}
+.habits-p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Run an extra mile easily css code start here  */
+.run{
+    display: flex;
+    border-radius: 18px;
+    background-color: rgb(34, 34, 34);
+    padding: 40px 50px;
+    margin: 62px 0px;
+}
+.run-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.run-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.run-para{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 14px 0px;
+}
+#join-btn{
+    margin: 34px 0px;
+}
+.run-img img{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: none;
+    object-position: 66% 33%;
+}
+
+
 
 /* Responsive layout start here  */
 
 @media screen and (max-width: 576px) {
+    .main-header{
+        width: 90%;
+        margin: 0 auto;
+    }
     .menu-bar{
         display: none;
     }
@@ -186,4 +273,30 @@ body{
         top: 750px;
         left: 175px;
     }
+
+/* Change your habit responsive code start here  */
+.habit-title{
+    font-size: 1.5rem;
+}
+.habits{
+    grid-template-columns: 1fr;
+}
+
+/* run an extra mile easily responsive code start here  */
+.run{
+    flex-direction: column;
+    padding: 20px 25px;
+}
+.run-title{
+    font-size: 1.5rem;
+}
+.run-img img{
+    width: 100%;
+    object-fit: cover;
+}
+#join-btn{
+    margin: 17px 0px;
+}
+
+
 }
