@@ -274,6 +274,50 @@ body{
 }
 
 
+/* Footer sectoin css code start from here  */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(60, 60, 60);
+    margin: 88px 0px;
+}
+.footer-fitness{
+    font-size: 5rem;
+    font-weight: 900;
+    color: #E6533C;
+}
+.foot-para{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.service h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.service-list li{
+    list-style: none;
+}
+.service-list a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    /* width: 80%; */
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 38px 0px;
+}
 
 /* Responsive layout start here  */
 
@@ -326,7 +370,8 @@ body{
     font-size: 1.5rem;
 }
 .habits,
-.img-box{
+.img-box,
+.footer{
     grid-template-columns: 1fr;
 }
 
@@ -342,6 +387,9 @@ body{
 #join-btn{
     margin: 17px 0px;
 }
-
+/* footer section responsive code  */
+.footer-fitness{
+    font-size: 3rem;
+}
 
 }
