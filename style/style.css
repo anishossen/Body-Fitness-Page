@@ -228,6 +228,51 @@ body{
     object-position: 66% 33%;
 }
 
+/* Meet our team section css code start here  */
+.team-text{
+    text-align: center;
+    margin: 58px 0px;
+}
+.team-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.team-para{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.img-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 18px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background-color: rgb(60, 60, 60);
+}
+.img-card{
+    position: relative;
+}
+.img-card img{
+    width: 320px;
+    height: 270px;
+    border-radius: 18px;
+}
+.trainer-name{
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+.trainer-name span{
+    color: #777777;
+    font-size: 1rem;
+}
+
 
 
 /* Responsive layout start here  */
@@ -275,10 +320,13 @@ body{
     }
 
 /* Change your habit responsive code start here  */
-.habit-title{
+.habit-title,
+.run-title,
+.team-title{
     font-size: 1.5rem;
 }
-.habits{
+.habits,
+.img-box{
     grid-template-columns: 1fr;
 }
 
@@ -286,9 +334,6 @@ body{
 .run{
     flex-direction: column;
     padding: 20px 25px;
-}
-.run-title{
-    font-size: 1.5rem;
 }
 .run-img img{
     width: 100%;
